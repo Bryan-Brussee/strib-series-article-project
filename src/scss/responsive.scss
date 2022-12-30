@@ -1,1 +1,70 @@
 @import "variables";
+@import "figure";
+@import "hero";
+//make sure to wrap all content in a .page-content div tag
+
+.content {
+    padding-left: $mobile-gutter;
+    padding-right: $mobile-gutter;
+}
+
+.series-article .l-article-body .article-body, 
+.series-article .l-article-body .article-body-no-ads {
+    width: $desktop-body-width;
+}
+
+.page-content {
+
+    > p {
+        font-size: 16px !important;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    h4 {
+        line-height: 1.5!important;
+        margin-bottom: 20px !important;
+        margin-top: 50px !important;
+        font-size: 16px !important;
+    }
+
+
+}
+
+.figure-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    iframe {
+        width: 100%;
+    }
+}
+
+.article-body p a,
+.article-body-no-ads p a
+ {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #888;
+    padding-bottom: 1px;
+
+    &:hover, &:active {
+        color: black;
+        text-decoration: none;
+        border-bottom: 2px solid black;
+        padding-bottom: 1px;
+    }
+}
+
+
+//tablets and smaller browser windows
+@media only screen and (min-width: $tablet-size) {
+    .content-scroll {
+        max-width: $desktop-body-width;
+        .content {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+

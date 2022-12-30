@@ -1,0 +1,204 @@
+.global-nav-mod {
+    padding: 0;
+}
+
+.site-container {
+    padding-top: 0 !important;
+}
+
+.nav-shortcuts-mod {
+    display: none;
+}
+
+.series-article .l-article,
+.clean-sheet .l-article {
+    padding-top: 0;
+}
+
+.series-article .hero-override .article-subhead {
+    max-width: 650px;
+}
+
+.mobile .hero-container {
+    padding-top: 40px;
+}
+
+.hero-container {
+    height: 460px;
+    margin-bottom: 30px;
+
+    .hero-image {
+        min-height: 100%;
+        background: rgba(0, 0, 0, .075) url(https://chorus.stimg.co/24209531/08_13MAGQA112022.JPG?&w=1500);
+        background-position: 85% 50%;
+        background-size: cover;
+        background-blend-mode: darken;
+        position: relative;
+
+
+        .header-container {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            padding: 60px 15px 20px 15px;
+            background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.25) 15%, rgba(0, 0, 0, 0.35) 33%);
+
+            .headline-container {
+                max-width: 1000px;
+                margin: 0 auto;
+
+                h1 {
+                    font-family: 'Popular', Helvetica, Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-shadow: 2px 2px #000;
+                    font-size: 34px;
+                    margin: 0px auto 0 auto;
+                    line-height: 1;
+                    margin-bottom: 0;
+                    color: white;
+                    letter-spacing: .5px;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+}
+
+p.hero-byline {
+    font-size: 10px !important;
+    font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #666;
+    letter-spacing: 1px;
+    line-height: 120%;
+    padding-left: $mobile-gutter;
+    padding-right: $mobile-gutter;
+    max-width: 600px;
+    margin: 8px auto 50px;
+
+}
+
+p.hero-caption {
+    font-size: 12px !important;
+    font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #444;
+    letter-spacing: 1px;
+    line-height: 120%;
+    max-width: 600px;
+    margin: 8px auto 55px;
+    padding-left: $mobile-gutter;
+    padding-right: $mobile-gutter;
+}
+
+.mobile {
+    p.hero-byline {
+        font-size: 9px !important;
+    }
+}
+
+.dek-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 600px;
+    margin: 0 auto 42px;
+
+
+    h2 {
+        font-size: 23px;
+        font-weight: normal;
+        font-family: "Whitman Display";
+        text-align: center;
+
+    }
+}
+
+.custom-byline-container {
+    line-height: 12px;
+    margin: 12px auto 24px;
+    max-width: 600px;
+    text-align: center;
+    font-family: "Benton Sans",Helvetica,Arial,sans-serif;    
+
+
+    p.custom-byline {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    p.timestamp {
+        color: gray;
+        font-size: 13px;
+        margin-top: 26px;
+        text-transform: uppercase;
+    }
+
+
+}
+
+//Samsung Galaxy S8+
+@media only screen and (max-width: 360px) {
+    .hero-container .hero-image .header-container .headline-container h1 {
+        font-size: 30px;
+    }
+}
+
+
+@media only screen and (min-width: $tablet-size) {
+    .hero-container {
+        height: 600px;
+        padding-top: 0;
+
+        .hero-image .header-container .headline-container h1 {
+            font-size: 50px;
+        }
+    }
+
+    .dek-container h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: $desktop-size) {
+    .hero-container {
+        height: 100vh;
+        .hero-image {
+            background: rgba(0, 0, 0, .075) url(https://chorus.stimg.co/24209531/08_13MAGQA112022.JPG?fit=crop&crop=focalpoint&fp-x=.80&fp-y=.46&fp-z=1.33&w=2500);
+            background-position: 100% 50%;
+            background-size: cover;
+
+            .header-container {
+                padding: 60px 50px 100px 50px;
+                background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.20) 15%, rgba(0, 0, 0, 0.35) 33%);
+    
+                .headline-container h1 {
+                    padding: 0 24px;
+                    line-height: 1.1;
+                    font-size: 6em;
+                }
+            }
+        }
+    }
+
+    p.hero-caption {
+        margin-bottom: 75px;
+    }
+
+    .dek-container {
+        max-width: 800px;
+        h2 {
+            font-size: 36px;
+        }
+    }
+
+    .custom-byline-container {
+        p.custom-byline {
+            font-size: 15px;
+        }
+    }
+}
