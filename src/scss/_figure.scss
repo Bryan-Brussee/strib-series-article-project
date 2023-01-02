@@ -40,11 +40,26 @@
     }
 }
 
+.figure-container.small {
+    width: 50%;
+    float: left;
+    margin: 0.5em 1.5em 0em 0em;
+    position: relative;
+
+}
+
 @media only screen and (min-width: $tablet-size) {
     .full-bleed {
         margin-left: calc((#{$desktop-body-width} - 100vw) / 2) !important;
         margin-right: calc((#{$desktop-body-width} - 100vw) / 2) !important;
     }
+
+
+    .figure-container.small {
+        margin: 0.5em 2em 0.5em -2em;
+        padding-bottom: 16px;
+    }
+
 
     .figure-container figure figcaption {
 
@@ -58,7 +73,7 @@
             margin-right: auto;
             margin-left: auto;
         }
-        
+
     }
 
     .photo-sculpture {
