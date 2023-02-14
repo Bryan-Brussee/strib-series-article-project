@@ -48,6 +48,52 @@
 
 }
 
+//for custom display text on graphics
+
+.datawrapper.custom  {
+
+    figcaption {
+
+        h3.figure-header {
+            font-family: 'Benton Sans', Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+    
+        p.figure-caption {
+            font-family: 'Benton Sans', Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px !important;
+            line-height: 20px;
+            color: #333;
+        }
+    }
+    
+    .source-line {
+        font-family: "Benton Sans", Helvetica, sans-serif;
+
+        color: #656565;
+        font-size: 12px !important;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 1.1;
+        margin-bottom: 5px;
+    }
+    
+    .credit-line {
+        font-family: "Benton Sans", Helvetica, sans-serif;
+        color: #888;
+        font-size: 11px !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+    }
+}
+
+
 @media only screen and (min-width: $tablet-size) {
     .full-bleed {
         margin-left: calc((#{$desktop-body-width} - 100vw) / 2) !important;
