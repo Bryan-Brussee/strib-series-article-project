@@ -1,7 +1,6 @@
 @import "variables";
 @import "figure";
-@import "hero";
-//make sure to wrap all content in a .page-content div tag
+@import "cover_hero";
 
 .content {
     padding-left: $mobile-gutter;
@@ -13,22 +12,14 @@
     width: $desktop-body-width;
 }
 
-.page-content {
+.article-body {
+    
+    font-size: 16px;
 
     > p {
-        font-size: 16px !important;
         margin-bottom: 20px;
         line-height: 1.5;
     }
-
-    h4 {
-        line-height: 1.5!important;
-        margin-bottom: 20px !important;
-        margin-top: 50px !important;
-        font-size: 16px !important;
-    }
-
-
 }
 
 .figure-container {
@@ -58,7 +49,7 @@
 
 
 //tablets and smaller browser windows
-@media only screen and (min-width: $tablet-size) {
+@media only screen and (min-width: $tablet) {
     .content-scroll {
         max-width: $desktop-body-width;
         .content {
